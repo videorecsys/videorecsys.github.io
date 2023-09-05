@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>VideoRecSys Workshop 2023</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- Custom Fonts -->
+      <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+      <link href="css/css_002.css" rel="stylesheet" type="text/css">
+      <link href="css/css_003.css" rel="stylesheet" type="text/css">
+      <link href="css/css.css" rel="stylesheet" type="text/css">
+      <link href="css/css_004.css" rel="stylesheet" type="text/css">
+      <!-- Theme CSS -->
+      <link href="css/agency.css" rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css">
+         /*     .tg  {border-collapse:collapse;border-spacing:0; width: 350px} */
+         .tg {border-collapse:collapse;margin-left:auto;margin-right:auto;width:1240px}
+         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:12px 12px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+         .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 12px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;}
+         .tg .tg-lqy6{text-align:right;vertical-align:top;white-space: nowrap}
+         .tg .tg-odj0{font-weight:bold;background-color:#ffcb2f;vertical-align:top}
+         .tg .tg-yw4l{vertical-align:top;text-align:left}
+         .tg .tg-l2oz{font-weight:bold;text-align:right;vertical-align:top}
+         .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+         .tg .tg-xr8r{background-color:#ffffc7;text-align:right;vertical-align:top}
+         .tg .tg-kjho{background-color:#ffffc7;vertical-align:top}
+      </style>
+   </head>
+   <body id="page-top" class="index">
+      <!-- Navigation -->
+      <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix-top">
+         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand page-scroll" href="#page-top">VideoRecSys Workshop 2023</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden active">
+                     <a href="#page-top"></a>
+                  </li>
+                  <li class="">
+                     <a class="page-scroll" href="#introduction">Intro</a>
+                  </li>
+                  <li class="">
+                     <a class="page-scroll" href="#speakers">Speakers</a>
+                  </li>
+                  <!-- <li class="">
+                     <a class="page-scroll" href="#call">CFP</a>
+                  </li> -->
+                  <li class="">
+                     <a class="page-scroll" href="#program">Schedule</a>
+                  </li>
+                  <li class="">
+                     <a class="page-scroll" href="#registration">Registration</a>
+                  </li>
+                  <li class="">
+                     <a class="page-scroll" href="#organization">Organizers</a>
+                  </li>
+                  <!-- <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops<span class="caret"></span></a>
+                     <ul class="dropdown-menu" >
+                        <li><a style="color:#777" href="./2021/index.html">VideoRecSys-2021</a></li>
+                        <li><a style="color:#777" href="./2022/index.html">VideoRecSys-2022</a></li>
+                     </ul>
+                     </li> -->
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <script>
+         /* When the user clicks on the button,
+         toggle between hiding and showing the dropdown content */
+         function myFunction() {
+           document.getElementById("myDropdown").classList.toggle("show");
+         }
+         
+         // Close the dropdown if the user clicks outside of it
+         window.onclick = function(e) {
+           if (!e.target.matches('.dropbtn')) {
+           var myDropdown = document.getElementById("myDropdown");
+             if (myDropdown.classList.contains('show')) {
+               myDropdown.classList.remove('show');
+             }
+           }
+         }
+      </script>
+      <!-- Header -->
+      <header>
+         <div class="container">
+            <div class="intro-text">
+               <div class="intro-preheading">The 1st Workshop on </div>
+               <div class="intro-heading">Large-Scale Video Recommender Systems</div>
+               <div class="intro-lead-in">At ACM RecSys '23 Sep 19th, 2023</div>
+               <a href="#registration" class="page-scroll btn btn-xl">Register</a>
+               <br>
+               <br>
+            </div>
+         </div>
+      </header>
+      <a>
+         <FONT COLOR="#000">
+            <center style="font-size: 18pt; color: #000" >
+            Visits:
+         </FONT>
+         <img src="https://hitwebcounter.com/counter/counter.php?page=8924839&style=0005&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="Web Counter" border="0" />
+      </a>
+      <!-- Services Section -->
+      <section id="introduction">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Introduction</h2>
+                  <div class="row text-justify">
+                     <p class="large text-muted">The demand for personalized video recommendations has grown exponentially with the widespread use of video content across various domains, including entertainment, e-commerce, education and social media. The explosive growth of video content on the internet, combined with the ubiquitous availability of high-speed internet and advancements in mobile camera technology have made it easier than ever for users to create, access and consume videos. With the proliferation of online social media applications like Instagram, YouTube, Facebook and TikTok, the need for large-scale video recommendation systems which can provide users with personalized and relevant recommendations has increased.</p>
+                     <p class="large text-muted">The Large-Scale Video Recommendations workshop (VideoRecSys) acknowledges the vital significance of these systems and the unique challenges and opportunities they present. With the explosive growth of video platforms and the diverse array of user behaviors and preferences, addressing scalability, diversity and serendipity in recommendations becomes a complex yet vital endeavor.</p>
+                     <p class="large text-muted">Join us in this workshop where we bring together renowned researchers and industry experts in the field to delve into the latest advancements, cutting-edge techniques and innovative approaches that are shaping the future of large-scale video recommender systems. Through insightful discussions, engaging presentations and collaborative networking, we aim to foster a deeper understanding of the field's intricacies and collectively chart a course towards more effective, responsible and impactful video recommendations.</p>
+                     <!-- <p class="large text-muted">Topics of interest include, but are not limited to: </p>
+                        <ul class="large text-muted">
+                             <li>Novel algorithms and paradigms
+                               <ul>
+                                 <li>online and adaptive neural recommender</li>
+                                 <li>reinforcement learning (on-policy, off-policy, offline RL, and other relevant subfields)</li>
+                                 <li>online/streaming learning</li>
+                                 <li>interactive and conversational recommender</li>
+                                 <li>extreme classification</li>
+                                 <li>graph recommender</li>
+                               </ul>
+                             </li>
+                             <li>Applications
+                               <ul>
+                                 <li>product recommendations</li>
+                                 <li>content recommendations (news, music, movie, video, etc.)</li>
+                                 <li>ads recommendations</li>
+                                 <li>fashion and decor recommendation</li>
+                                 <li>job recommendation</li>
+                                 <li>intervention/behavior change/healthy life-style recommendations</li>
+                               </ul>
+                             </li>
+                         </ul> -->
+                     <!-- <p class="large text-muted">Although the symposium will include talks from expert faculty in the above areas, most of the workshop will primarily be <b>focused on student contributions</b>, in the form of contributed talks and posters.</p>  -->
+                     <!-- <p class="large text-muted">The 2016 SoCal ML symposium is sponsored by <a href="https://research.google.com/">Google Research</a>, who will provide a <b>&#36;750 prize</b> for the best presentation</p>   -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="speakers" class="bg-mid-gray">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Invited Speakers</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-1">
+                  &nbsp;
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/headshot-male.jpg" class="img-responsive img-circle" alt="">
+                     <h4>Lukasz Heldt</h4>
+                     <p class="text-muted">Google<br>Mountain View, USA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://www.linkedin.com/in/lukasz-heldt-6226691/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://dblp.org/pid/63/5281.html"><i class="fa fa-graduation-cap"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/headshot-male.jpg" class="img-responsive img-circle" alt="">
+                     <h4>Thomas Bredillet</h4>
+                     <p class="text-muted">Instagram<br>New York, USA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://www.thomasbredillet.com/" target="_blank"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/thomas-bredillet-59564a44/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/minmin-chen-google.jpeg" class="img-responsive img-circle" alt="">
+                     <h4>Minmin Chen</h4>
+                     <p class="text-muted">Google<br>USA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://research.google/people/106011/" target="_blank"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/minmin-chen-88411311/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://scholar.google.com/citations?user=kR7DersAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/qingpeng-cai-kuaishou.jpg" class="img-responsive img-circle" alt="">
+                     <h4>Qingpeng Cai</h4>
+                     <p class="text-muted">Kuaishou <br> Beijing, China<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://qingpengcai.github.io/" target="_blank"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://scholar.google.com/citations?user=uU6s1tYAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/mark-hsiao-netflix.jpeg" class="img-responsive img-circle" alt="">
+                     <h4>Ko-Jen Hsiao</h4>
+                     <p class="text-muted">Netflix<br>Los Gatos, USA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://www.linkedin.com/in/markhsiao/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://dblp.org/pid/81/3155.html"><i class="fa fa-graduation-cap"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- <section id="call">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Call for Papers</h2>
+                  <br><br>
+                  <h4>
+                     <a href="Google Docs Link" target="_blank">Feedback and stay updated to the workshop</a>
+                  </h4>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <section id="program">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Schedule</h2>
+                  <!-- <h3 class="section-subheading text-muted">Details Will Come Soon...</h3>-->
+               </div>
+            </div>
+            <script>
+               function myFunction(id) {
+                 var x = document.getElementById(id);
+                 if (x.style.display === "none") {
+                   x.style.display = "block";
+                 } else {
+                   x.style.display = "none";
+                 }
+               }
+            </script>
+            <div class="row">
+               <div class="col-lg-12 text-left">
+                  <table class="tg">
+                     <tbody>
+                        <tr>
+                           <th class="tg-odj0" width="12%">Time</th>
+                           <th class="tg-odj0" width="88%">Talk</th>
+                        </tr>
+                        <tr>
+                           <td class="tg-yw4l" width="12%">14:00-14:15 SGT
+                           </td>
+                           <td class="tg-yw4l">Opening Remarks</td>
+                        </tr>
+                        <tr>
+                           <td class="tg-yw4l">14:15-14:45 SGT</td>
+                           <td class="tg-yw4l">Keynote Talk<br><font color=#044482>TBD</font> [<a style="color:#044482;" href="slides/Lukasz-Heldt-VideoRecSys2023.pdf" target="_blank"><b>Slides</b></a>]
+                              <br>Lukasz Heldt, Google<br>This is placeholder text for the talk abstract.
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="tg-yw4l">14:50-15:20 SGT</td>
+                           <td class="tg-yw4l">Expert Talk 1<br><font color=#044482>TBD</font> [<a style="color:#044482;" href="slides/Thomas-Bredillet-VideoRecSys2023.pdf" target="_blank"><b>Slides</b></a>]
+                              <br>Thomas Bredillet, Instagram<br>This is placeholder text for the talk abstract.
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="tg-yw4l">16:05-16:35 SGT</td>
+                           <td class="tg-yw4l">Expert Talk 2<br><font color=#044482>TBD</font> [<a style="color:#044482;" href="slides/Minmin-Chen-VideoRecSys2023.pdf" target="_blank"><b>Slides</b></a>]
+                              <br>Minmin Chen, Google<br>This is placeholder text for the talk abstract.
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="tg-yw4l">16:35-17:05 SGT</td>
+                           <td class="tg-yw4l">Expert Talk 3<br><font color=#044482>TBD</font> [<a style="color:#044482;" href="slides/Qingpeng-Cai-VideoRecSys2023.pdf" target="_blank"><b>Slides</b></a>]
+                              <br>Qingpeng Cai, KuaiShou<br>This is placeholder text for the talk abstract.
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="tg-yw4l">17:05-17:35 PT</td>
+                           <td class="tg-yw4l">Expert Talk 4<br><font color=#044482>TBD</font> [<a style="color:#044482;" href="slides/Mark-Hsiao-VideoRecSys2023.pdf" target="_blank"><b>Slides</b></a>]
+                              <br>Ko-Jen (Mark) Hsiao, Netflix<br>This is placeholder text for the talk abstract.
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="registration" class="bg-mid-gray">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Registration</h2>
+                  <h3 class="section-subheading text-muted">Register at <a href="https://recsys.acm.org/recsys23/registration/">ACM RecSys 2023</a></h3>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="organization">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Workshop Organizers</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-1">
+                  &nbsp;
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-1">
+                  &nbsp;
+               </div>
+               <div class="col-sm-1">
+                  &nbsp;
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/khushhall-chandra-mahajan-meta.jpeg" class="img-responsive img-circle" alt="">
+                     <h4>Khushhall Chandra Mahajan</h4>
+                     <p class="text-muted">Meta<br>Menlo Park, CA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://www.linkedin.com/in/khushhall/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://www.khushhall.com/" target="_blank"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/banarasi_ghat" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/amey-porobo-dharwadker-meta.jpeg" class="img-responsive img-circle" alt="">
+                     <h4>Amey Porobo Dharwadker</h4>
+                     <p class="text-muted">Meta<br>Menlo Park, CA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://www.linkedin.com/in/ameydharwadker/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://ameydhar.com/" target="_blank"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/ameydhar" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/saurabh-gupta-meta.jpg" class="img-responsive img-circle" alt="">
+                     <h4>Saurabh Gupta</h4>
+                     <p class="text-muted">Meta<br>Menlo Park, CA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://www.linkedin.com/in/saurabhgupta1403/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/saurabh1403" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-2">
+                  <div class="team-member">
+                     <img src="images/brad-schumitsch-meta.jpeg" class="img-responsive img-circle" alt="">
+                     <h4>Brad Schumitsch</h4>
+                     <p class="text-muted">Meta<br>Menlo Park, CA<br>&nbsp;</p>
+                     <ul class="list-inline social-buttons-team">
+                        <li><a href="https://www.linkedin.com/in/schumitsch/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--                 <div class="col-sm-1">
+                  &nbsp;
+                  </div> -->
+               <div class="col-lg-12 text-center">
+                  <h4>Contact us</h4>
+                  <p class="large text-muted">Please send questions and enquiries to <a href="mailto:videorecsys@gmail.com">videorecsys [at] gmail [dot] com</a>.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- <section id="Program Committee">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Program Committee</h2>
+                  <div class="row text-justify">
+                     <ul class="large text-muted">
+                        <li>Name, Organization</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </section> -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <span class="copyright">Copyright © 2023</span>
+               </div>
+               <div class="col-md-4">
+                  <ul class="list-inline social-buttons">
+                     <!--                         <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li> -->
+                  </ul>
+               </div>
+               <!--                <div class="col-md-4">-->
+               <!--                    <ul class="list-inline quicklinks">-->
+               <!--                        <li>Sponsored by<a href="https://research.google.com/"> Google</a>-->
+               <!--                        </li>-->
+               <!--                    </ul>-->
+               <!--                </div>-->
+            </div>
+         </div>
+      </footer>
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="js/jquery_002.js"></script>
+      <!-- Contact Form JavaScript -->
+      <script src="js/jqBootstrapValidation.js"></script>
+      <script src="js/contact_me.js"></script>
+      <!-- Theme JavaScript -->
+      <script src="js/agency.js"></script>
+   </body>
+</html>
